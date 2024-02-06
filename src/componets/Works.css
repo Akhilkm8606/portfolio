@@ -150,6 +150,19 @@
     transition: opacity 2s ease; /* Smoother fade-out transition */
   }
   
+  @media (max-width: 1200px) {
+
+    .button-left {
+      top: 50%;
+      left: 0%;
+      
+    }
+  
+    .button-right {
+      top: 50%;
+      right: 0%;
+    }
+  }
   @media (max-width: 768px) {
     .row {
       display: flex;
@@ -173,14 +186,14 @@
     }
   
     .button-left {
-      top: 55%;
-      left: -5%;
+      top: 50%;
+      left: 0%;
       
     }
   
     .button-right {
-      top: 55%;
-      right: -5%;
+      top: 50%;
+      right: 0%;
     }
   }
   
