@@ -1,82 +1,61 @@
 const projectData = {
     images: [
-      require('./images/cartoon-man-wearing-glasses.jpg'),
-      require('./images/integrate-scene-mobile-screen-frame.jpg'),
+      require('./images/9092685.jpg'),
+      require('./images/2306425.jpg'),
 
-      require('./images/cartoon-man-wearing-glasses.jpg'),
-      require('./images/person-looking-futuristic-mystical-other-worldly-sky.jpg'),
-      require('./images/cartoon-man-wearing-glasses.jpg'),
+      require('./images/2002.i039.018_remote_management_distant_work_isometric_icons-01.jpg'),
+      require('./images/38621.jpg'),
+      require('./images/2561330.jpg'),
 
-      require('./images/person-looking-futuristic-mystical-other-worldly-sky.jpg'),
-      require('./images/cartoon-man-wearing-glasses.jpg'),
-      require('./images/person-looking-futuristic-mystical-other-worldly-sky.jpg'),
-      require('./images/cartoon-man-wearing-glasses.jpg'),
-
-      require('./images/person-looking-futuristic-mystical-other-worldly-sky.jpg'),
-
+      require('./images/3051272.jpg'),
+      require('./images/29107.jpg'),
+     
     ],
     
     projects: [
       {
         id: 1,
-        name: 'Calculator 1',
+        name: 'Portfolio',
         languages: ['html', 'css', 'bootstrap', 'javascript'],
-        description: 'Description for Calculator 1',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam sequi quos consequatur corporis laborum, ipsum, cupiditate accusantium fugiat, modi est atque harum ipsa quaerat distinctio. Dolor neque ex quibusdam?',
       },
       {
         id: 2,
-        name: 'Calculator 2',
+        name: 'Calculator ',
         languages: ['html', 'css', 'bootstrap', 'javascript'],
-        description: 'Description for Calculator 2',
+        description: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam sequi quos consequatur corporis laborum, ipsum, cupiditate accusantium fugiat, modi est atque harum ipsa quaerat distinctio. Dolor neque ex quibusdam?',
       },
       {
         id: 3,
-        name: 'Calculator 3',
-        languages: ['html', 'css', 'bootstrap', 'javascript'],
-        description: 'Description for Calculator 3',
+        name: 'Portfolio',
+        languages: ['html', 'css', 'bootstrap', 'javascript','react'],
+        description: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam sequi quos consequatur corporis laborum, ipsum, cupiditate accusantium fugiat, modi est atque harum ipsa quaerat distinctio. Dolor neque ex quibusdam?',
       },
       {
         id: 4,
-        name: 'Calculator 4',
-        languages: ['html', 'css', 'bootstrap', 'javascript'],
-        description: 'Description for Calculator 3',
+        name: 'Torry Harris Restaurantsants',
+        languages: ['html', 'css', 'bootstrap', 'javascript','react'],
+        description: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam sequi quos consequatur corporis laborum, ipsum, cupiditate accusantium fugiat, modi est atque harum ipsa quaerat distinctio. Dolor neque ex quibusdam?',
       },
       {
         id: 5,
-        name: 'Calculator 5',
+        name: 'To-Do',
         languages: ['html', 'css', 'bootstrap', 'javascript'],
-        description: 'Description for Calculator 3',
+        description: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam sequi quos consequatur corporis laborum, ipsum, cupiditate accusantium fugiat, modi est atque harum ipsa quaerat distinctio. Dolor neque ex quibusdam?',
       },
       {
         id: 6,
-        name: 'Calculator 6',
+        name: 'Xiaomi ',
         languages: ['html', 'css', 'bootstrap', 'javascript'],
-        description: 'Description for Calculator 3',
+        description: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam sequi quos consequatur corporis laborum, ipsum, cupiditate accusantium fugiat, modi est atque harum ipsa quaerat distinctio. Dolor neque ex quibusdam?',
       },
       {
         id: 7,
-        name: 'Calculator 7',
+        name: 'Law-Buddy',
         languages: ['html', 'css', 'bootstrap', 'javascript'],
-        description: 'Description for Calculator 3',
+        description: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam sequi quos consequatur corporis laborum, ipsum, cupiditate accusantium fugiat, modi est atque harum ipsa quaerat distinctio. Dolor neque ex quibusdam?',
       },
-      {
-        id: 8,
-        name: 'Calculator 8',
-        languages: ['html', 'css', 'bootstrap', 'javascript'],
-        description: 'Description for Calculator 3',
-      },
-      {
-        id: 9,
-        name: 'Calculator 9',
-        languages: ['html', 'css', 'bootstrap', 'javascript'],
-        description: 'Description for Calculator 3',
-      },
-      {
-        id: 10,
-        name: 'Calculator 10',
-        languages: ['html', 'css', 'bootstrap', 'javascript'],
-        description: 'Description for Calculator 3',
-      },
+      
     ],
   };
   

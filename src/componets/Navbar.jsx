@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { FaGithub } from "react-icons/fa6";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,9 +27,21 @@ function Navbar() {
           <Link onClick={() => setMenuOpen(!menuOpen)} to="/about">About</Link>
         </li>
         <li>
+          <Link onClick={() => setMenuOpen(!menuOpen)} to="/skill">Skill</Link>
+        </li>
+        <li>
+          <Link onClick={() => setMenuOpen(!menuOpen)} to="/work">Work</Link>
+        </li>
+        <li>
           <Link onClick={() => setMenuOpen(!menuOpen)} to="/contact">Contact</Link>
         </li>
       </ul>
+      <ul className={menuOpen ? 'open' : ''}>
+      <li>
+          <Link onClick={() => setMenuOpen(!menuOpen)} to="/">Git <FaGithub /></Link>
+        </li>
+      </ul>
+     
     </nav>
   );
 }
