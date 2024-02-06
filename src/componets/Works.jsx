@@ -57,7 +57,7 @@ function Works() {
                   <CardHeader>{currentProject.name}</CardHeader>
                   <CardText>Languages :{currentProject.languages.join(', ')}</CardText>
                   <CardBody>{currentProject.description}</CardBody>
-                  <a href="#">Live Demo</a>
+                  <a href="https://github.com/">Live Demo</a>
   
   
                 </Card>
@@ -72,7 +72,7 @@ function Works() {
                   <CardHeader>{nextProject.name}</CardHeader>
                   <CardText>Languages : {nextProject.languages.join(', ')}</CardText>
                   <CardBody>{nextProject.description}</CardBody>
-                  <a href="#">Live Demo</a>
+                  <a href="https://github.com/">Live Demo</a>
   
                 </Card>
               )}
