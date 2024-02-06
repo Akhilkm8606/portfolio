@@ -7,8 +7,6 @@ import Contact from './componets/Contact';
 import Home from './componets/Home';
 import Navbar from './componets/Navbar';
 import Footer from './componets/Footer';
-Footer
-
 function App() {
   return (
     <BrowserRouter>
