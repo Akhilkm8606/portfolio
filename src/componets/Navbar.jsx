@@ -1,23 +1,36 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div>
-        <ul>
-            <li> <Link  to= "./">Home</Link></li>
-            <li>
-                <Link to= "/about">About</Link>
-            </li>
-            <li>
-                <Link to= "/contact">Contact</Link>
-            </li>
-            {/* <li>
-                <Link to= "/about">About</Link>
-            </li> */}
-        </ul> 
-        </div>
-  )
+    <nav className='menu-section'>
+      <Link to="/" className='logo-section'>
+        <span></span>
+        <span></span>
+        <span>AK</span>
+        <h1>Portfolio</h1>
+      </Link>
+      <div className='menu-icon' onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={menuOpen ? 'open' : ''}>
+        <li>
+          <Link onClick={() => setMenuOpen(!menuOpen)} to="/">Home</Link>
+        </li>
+        <li>
+          <Link onClick={() => setMenuOpen(!menuOpen)} to="/about">About</Link>
+        </li>
+        <li>
+          <Link onClick={() => setMenuOpen(!menuOpen)} to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

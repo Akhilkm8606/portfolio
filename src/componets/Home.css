@@ -1,0 +1,184 @@
+
+
+#hero {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+ row-gap: 10px;
+    align-items: center;
+    min-height: 90vh;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+ 
+}
+
+.typed-text{
+   
+    color: #ff5733;
+    &:after { 
+      content: '';
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink {
+      50% {transform: translate x(1);
+        opacity: 0;
+      }
+    }
+  
+    
+}
+.typed-subtitle{
+    color: #f03c15;
+}
+.hero-row{
+    display: flex;
+    justify-content: center;
+
+   column-gap: 30px;
+ 
+}
+
+.hero-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateAnimation 3s ; /* Rotate the circular image continuously */
+
+
+}
+
+.hero-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px double #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+        
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.img-container {
+    position: relative;
+}
+
+.icon-container {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    
+    
+}
+.icon-container .icon{
+    color: #833AB4;
+}
+
+
+.icon-container_1 {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+   
+}
+.icon-container_3 .icon{
+    color: #f03c15;
+}
+
+
+.icon-container_2{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+  
+}
+.icon-container_2 .icon{
+    color: #000000;
+}
+
+.icon-container_3{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+   
+}
+
+.icon-container_3 .icon{
+    color: #000000;
+    
+}
+@keyframes iconAnimation {
+    from {
+        transform: rotate(0deg);
+        
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.icon {
+    animation: iconAnimation 6s linear infinite; /* Rotate the circular image continuously */
+
+   padding: 5px;
+ 
+    background-color:#fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.icon :nth-child(1) {
+    font-size: 2rem;
+  
+}
+
+@media only screen and (max-width:768px) {
+    
+    .hero-img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+       
+    }
+  
+.hero-column{
+        font-size: 15px;
+
+    }
+    .hero-row{
+        gap: 10px;
+    }
+    
+.hero-content p,h1{
+   
+    font-size: 24px;
+    text-align: center  ;
+
+}
+}

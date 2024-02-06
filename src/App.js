@@ -6,7 +6,8 @@ import About from './componets/About';
 import Contact from './componets/Contact';
 import Home from './componets/Home';
 import Navbar from './componets/Navbar';
-
+import Footer from './componets/Footer';
+Footer
 
 function App() {
   return (
@@ -16,11 +17,8 @@ function App() {
     <Route  path="/" element={<Home/>} />
     <Route  path="/about" element={<About/>} />
     <Route  path="/contact" element={<Contact/>} />
-        {/* <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} /> */}
-    </Routes>
-        
-     
+           </Routes>
+     <Footer/>
   
   </BrowserRouter>
   );

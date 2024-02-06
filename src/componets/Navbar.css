@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+
+
+.menu-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+      background: rgba(0, 0, 0, 0.10); /* Black background with 50% opacity */
+      backdrop-filter: blur(10px); /* Blur the background */
+  
+     /* You can adjust the blur value as needed */
+
+  border: 1px solid  #eee; 
+  margin:25px auto ;
+  padding: 13px;
+  position: sticky;
+  top: 0;
+  width: 80%;
+  z-index: 1000;
+  border-radius: 10px;
+}
+.logo-section{
+    position: relative;
+    text-decoration: none;
+}
+.logo-section span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+   
+  }
+  .logo-section :nth-child(1){
+
+    background-color: #eee;
+    top: 0%;
+    left: 2%;
+  }
+  .logo-section :nth-child(2){
+    background-color: #eee;
+    top: 0%;
+    left: 9%;
+  }
+  .logo-section :nth-child(3){
+    background-color: #0e0f0e;
+    top: 0%;
+    left: 5%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    color: #eee;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+  }
+  
+ 
+nav h1  {
+    font-family: __DM_Sans_7e48f8, __DM_Sans_Fallback_7e48f8, sans-serif;
+   
+  margin-left: 3.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #eee; 
+  
+  }
+  .menu-icon{
+    display: none; 
+    position: absolute;
+    top: 0.75rem;
+    right: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+   
+  }
+  .menu-icon span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.2rem;
+  }
+nav ul{
+    display: flex;
+}
+nav li {
+    list-style: none;
+    text-align: center;
+}
+nav li a {
+    display: block;
+  font-family: 'Roboto Mono', monospace;
+font-size: 1.2rem;
+  text-decoration: none;
+  padding-right: 20px;
+  font-weight: 800;
+  margin-right: 10px;
+  color: #e28664;}
+  
+
+  
+
+
+  @media only screen and (max-width:768px) {
+    .menu-icon{
+        display: flex;
+       
+      }
+      .menu-section{
+       
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+
+      }
+      nav ul li{
+        width: 100%;
+      text-align: center;
+
+      }
+      nav ul.open {
+        display: flex;
+      }
+      nav h1  {
+        font-family: __DM_Sans_7e48f8, __DM_Sans_Fallback_7e48f8, sans-serif;
+       
+      margin-left: 3rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #eee; 
+      
+      }
+      .logo-section{
+        margin-right: 5px;
+      }
+  }
