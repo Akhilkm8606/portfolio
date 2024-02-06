@@ -11,12 +11,14 @@
     color: white;
     font-weight: bold;
     bottom: 0;
+    background:linear-gradient(rgb(168, 93, 159),rgb(87, 96, 150)) ;
+
  
 }
 
 .typed-text{
    
-    color: #ff5733;
+    color: black;
     &:after { 
       content: '';
       animation: blink 0.7s infinite;
