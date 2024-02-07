@@ -2,7 +2,6 @@ import React from 'react'
 import "./About.css"
 import { Col, Container, Row } from 'react-bootstrap'
 import img from './images/cartoon-hacker-boy_70172-3328.jpg';
-import Contact from './Contact';
 
 function About() {
     return (

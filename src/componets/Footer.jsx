@@ -1,7 +1,5 @@
 import React from 'react'
 import './footer.css'
-import { Col, Container, Row } from 'react-bootstrap'
-import { FaGithub, FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6'
 
 function Footer() {
     return (
