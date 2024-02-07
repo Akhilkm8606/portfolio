@@ -8,15 +8,16 @@ import Home from './componets/Home';
 import Navbar from './componets/Navbar';
   import Footer from './componets/Footer';
 import Works from './componets/Works';
-import Skill from './componets/Skill';
+import Services from './componets/Services';
 function App() {
+  
   return (
     <BrowserRouter>
 <Navbar/>
     <Routes>
     <Route  path="/" element={<Home/>} />
     <Route  path="/about" element={<About/>} />
-    <Route  path="/skill" element={<Skill/>} />
+    <Route  path="/services" element={<Services/>} />
     <Route  path="/contact" element={<Contact/>} />
     <Route  path="/work" element={<Works/>} />
            </Routes>

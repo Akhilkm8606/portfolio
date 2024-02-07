@@ -1,7 +1,10 @@
 import React from 'react';
 import  "./contact.css"
 import { Col, Container, Row } from 'react-bootstrap'
-import img from './images/8026383.jpg'
+import { FaXTwitter } from "react-icons/fa6";
+
+import { TfiEmail } from "react-icons/tfi";
+import { MdCall } from "react-icons/md";
 function Contact() {
   return (
     <section id='contact'>
@@ -9,9 +12,7 @@ function Contact() {
       <Container className='contact-container' >
     <h1>contact</h1>
         <Row className='contact-Row' >
-        
-      
-      <Col  className='input-col' md={6}>
+        <Col  className='input-col' md={6}>
         <div className='input'>
            
     <p>Connect with us,<br /> let’s make some magic.</p>
@@ -36,18 +37,46 @@ function Contact() {
             </div>
          
           </Col>
-          <Col  className='img-col'   md={6}  >
-            <div className='img'> 
-           
+        
+        <Col  className='img-col'   md={6}  >
+        <div className='name'>
 
-            <img src={img} alt="" /> 
+  <span className='location'>Your Location</span>
+</div>
 
-            </div>
+           <div>
+           <div className='img'>
+  <a href="mailto:akhilkrishnanm860645@gmail.com">
+    <TfiEmail/>
+   
+  </a>
+</div>
+
+<div className='img'>
+  <a href="tel:+1234567890">
+  <MdCall/>
+
+    
+  </a>
+</div>
+
+
+<div className='img'>
+<a href="https://twitter.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer">
+<FaXTwitter/>
+
+      </a> 
+    
+</div>
+           </div>
           </Col>
+     
+         
          
 
         </Row>
       </Container>
+      
     </section>
   );
 }

@@ -12,7 +12,6 @@ body{
     justify-content: space-around;
     align-items: center;
    
-      background: rgba(0, 0, 0, 0.10); /* Black background with 50% opacity */
       backdrop-filter: blur(10px); /* Blur the background */
   
      /* You can adjust the blur value as needed */

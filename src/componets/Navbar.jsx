@@ -27,7 +27,7 @@ function Navbar() {
           <Link onClick={() => setMenuOpen(!menuOpen)} to="/about">About</Link>
         </li>
         <li>
-          <Link onClick={() => setMenuOpen(!menuOpen)} to="/skill">Skill</Link>
+          <Link onClick={() => setMenuOpen(!menuOpen)} to="/services">Services</Link>
         </li>
         <li>
           <Link onClick={() => setMenuOpen(!menuOpen)} to="/work">Work</Link>

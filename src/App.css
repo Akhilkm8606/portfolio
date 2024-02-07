@@ -1,11 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-   background-color: #000000;
-  
+/* Global CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+
+  body {
+      height: auto; 
+      background:linear-gradient(rgb(37, 105, 93),rgb(8, 15, 56)) ;
+
+  }
 
