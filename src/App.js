@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter , Routes,Route } from "react-router-dom";
 import './App.css';
 
-import About from './componets/About';
-import Contact from './componets/Contact';
-import Home from './componets/Home';
-import Navbar from './componets/Navbar';
-  import Footer from './componets/Footer';
-import Works from './componets/Works';
-import Services from './componets/Services';
+import About from './componets/about/About';
+import Contact from './componets/contact/Contact';
+import Home from './componets/home/Home';
+import Navbar from './componets/navbar/Navbar';
+  import Footer from './componets/footer/Footer';
+import Works from './componets/work/Works';
+import Services from './componets/services/Services';
 function App() {
   
   return (

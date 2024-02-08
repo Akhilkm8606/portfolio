@@ -1,10 +1,14 @@
 
 import React, { useState } from 'react';
 import './Works.css';
-import projectData from './projectData';
-import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
+import projectData from '../projectData';
+import { CgPlayTrackNextO } from "react-icons/cg";
+
+
 import { Card, CardBody, CardHeader, CardText, Col, Container, Row } from 'react-bootstrap';
 
+
+import Service from '../services/Services';
 function Works() {
     const [index, setIndex] = useState(0);
     const [showCard, setShowCard] = useState(false);
@@ -43,10 +47,13 @@ function Works() {
     return (
       <section id='projects'>
         <Container  className='slider-container'>
-        <h1>projects</h1>
+       <div className='project-head'>
+       <h1>projects.</h1>
+        <p>These projects demonstrate my expertise with practical examples of some of my work, including brief descriptions and links to code repositories and live demos. They showcase my ability to tackle intricate challenges, adapt to various technologies, and efficiently oversee projects.</p>
+       </div>
           <Row className='slider-head'>
            
-            <button className='button-left' onClick={previmg}><GrCaretPrevious /> </button>
+            <button className='button-left' onClick={previmg}><CgPlayTrackNextO /> </button>
   
             <Col className={`slider-row ${fadeOut ? 'fade-out' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} key={index}>
               <img src={projectData.images[index]} alt="" />
@@ -78,10 +85,13 @@ function Works() {
               )}
             </Col>
   
-            <button className='button-right' onClick={nextimg}><GrCaretNext /></button>
+            <button className='button-right' onClick={nextimg}><CgPlayTrackNextO /></button>
           </Row>
+          <Service/>
+
         </Container>
       </section>
+  
     );
   }
   

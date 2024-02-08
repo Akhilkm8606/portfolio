@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Services.css"
 import { Col, Container, Row } from 'react-bootstrap'
-import fs from './images/3964906.jpg'
-import ui from './images/5071196.jpg'
-import fd from './images/4428861.jpg'
-import bd from './images/4421964.jpg'
+import fs from '../images/3964906.jpg'
+import ui from '../images/5071196.jpg'
+import fd from '../images/4428861.jpg'
+import bd from '../images/4421964.jpg'
 import { FaGitAlt, FaGithub, } from "react-icons/fa6";
 import { TbBrandVscode } from "react-icons/tb";
 import { SiPostman } from "react-icons/si";
@@ -16,11 +16,15 @@ function Service() {
   return (
     <section id='services-section'>
       <Container className='services-container'>
-      <h1>My Services</h1>
-        <Row className='services-row'>
+        <div className="service-head">
+        <h1>My Services</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus, quo voluptate nisi quaerat, molestias est blanditiis excepturi numquam repellendus voluptatem saepe quos, harum minus sed eius dolorum delectus voluptatibus.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, iusto, dolorem esse illo vel, accusamus rerum eligendi voluptates atque inventore dolor nesciunt quod quasi. Rem officiis sapiente sit voluptates maxime.
         </p>
+        </div>
+      
+        <Row className='services-row'>
+       
           <Col className='services-column'  >
           <div className='services'>
            <img src= {fd} alt="" />

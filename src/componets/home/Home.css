@@ -1,23 +1,22 @@
 
 
-#hero {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
- row-gap: 10px;
+.hero-row{
+    
+ row-gap: 30px;
     align-items: center;
     min-height: 90vh;
     padding: 1rem;
     color: white;
     font-weight: bold;
-    bottom: 0;
 
  
 }
 
 .typed-text{
    
-    color: black;
+    color: rgb(164, 161, 161);
+    margin-left: 50px;
+    font-size: 60px;
     &:after { 
       content: '';
       animation: blink 0.7s infinite;
@@ -32,12 +31,16 @@
 }
 .typed-subtitle{
     color: #f03c15;
+    font-size: 25px;
 }
+
 .hero-row{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 
-   column-gap: 30px;
+   column-gap: 20px;
  
 }
 
@@ -46,7 +49,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: rotateAnimation 3s ; /* Rotate the circular image continuously */
+    animation: rotateAnimation 3s ; 
+    
 
 
 }
@@ -158,12 +162,39 @@
     font-size: 2rem;
   
 }
+@media (max-width: 1200px){
+    .hero-row{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        row-gap: 100px;
+    }
+    .typed-text{
+   
+        color: rgb(164, 161, 161);
+        margin-left: 40px;
+        font-size: 40px;
+        &:after { 
+          content: '';
+          animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+          50% {transform: translate x(1);
+            opacity: 0;
+          }
+        }
+      
+        
+    }
 
+}
 @media only screen and (max-width:768px) {
     
+    
+
     .hero-img img {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         border-radius: 50%;
        
     }
@@ -172,14 +203,17 @@
         font-size: 15px;
 
     }
+    .hero-column-1{
+        margin-bottom: 30px;
+    }
     .hero-row{
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-content: center;
+        row-gap: 100px;
+        margin-bottom: 30px;
     }
     
-.hero-content p,h1{
-   
-    font-size: 24px;
-    text-align: center  ;
 
-}
 }

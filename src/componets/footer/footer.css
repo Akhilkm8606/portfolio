@@ -7,6 +7,12 @@
 }
 
 .footer-container {
-    max-width: 1200px; 
+    width: 1200px; 
     margin: 0 auto; 
+}
+@media (max-width: 1200px){
+    .footer-container {
+        width: fit-content; 
+        margin: 0 auto; 
+    }
 }

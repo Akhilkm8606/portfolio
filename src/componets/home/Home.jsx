@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
-import img from './images/person-looking-futuristic-mystical-other-worldly-sky.jpg';
+import img from '../images/person-looking-futuristic-mystical-other-worldly-sky.jpg';
 import { Col, Container, Row } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
 import "./Home.css"
@@ -16,7 +16,7 @@ function Home() {
             <Col className='hero-column' md={8}>
               <div className='hero-content'>
                 <h1 className='hero-title'>
-                  I, am{' '}
+                HI, I'M{' '}
                   <Typewriter
                     options={{
                       strings: [title],
@@ -46,7 +46,7 @@ function Home() {
 
               </div>
             </Col>
-            <Col md={4} className='hero-column'>
+            <Col md={4} className='hero-column-1'>
               <div className='hero-img'>
                 <div className='img-container'>
                   <img src={img} alt='' />
