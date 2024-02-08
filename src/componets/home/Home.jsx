@@ -7,13 +7,16 @@ import "./Home.css"
 
 function Home() {
     const title = 'AKHIL KRISHNAN M';
-    const subtitle = 'web developer';
+    const subtitle = 'WEB DEVELOPER';
+    const coder = 'CODER ';
   
     return (
       <section id='hero'>
         <Container>
+      
           <Row className='hero-row'>
             <Col className='hero-column' md={8}>
+
               <div className='hero-content'>
                 <h1 className='hero-title'>
                 HI, I'M{' '}
@@ -29,17 +32,19 @@ function Home() {
                 </h1>
                
 
-<div className='hero-subtitle'>
-  I am a {' '}
+<h1 className='hero-subtitle'>
+  I AM , A {' '}
   <Typewriter
     options={{
-      strings: [subtitle],
-      autoStart: true,
+      strings: [
+        `<span style="color: #FF5733;">${subtitle}</span>`,
+        `<span style="color: #33FF9E;">${coder} </span>`
+      ],      autoStart: true,
       loop: true,
       wrapperClassName: 'typed-subtitle',
     }}
   />
-</div>
+</h1>
 <div className='hero-description'>
   Welcome to my portfolio! I create elegant and responsive web applications using React.
 </div>

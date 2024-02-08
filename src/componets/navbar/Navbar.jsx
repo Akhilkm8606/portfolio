@@ -26,9 +26,7 @@ function Navbar() {
         <li>
           <Link onClick={() => setMenuOpen(!menuOpen)} to="/about">About</Link>
         </li>
-        <li>
-          <Link onClick={() => setMenuOpen(!menuOpen)} to="/services">Services</Link>
-        </li>
+        
         <li>
           <Link onClick={() => setMenuOpen(!menuOpen)} to="/work">Work</Link>
         </li>
@@ -37,9 +35,13 @@ function Navbar() {
         </li>
       </ul>
       <ul className={menuOpen ? 'open' : ''}>
-      <li>
-          <Link onClick={() => setMenuOpen(!menuOpen)} to="/">Git <FaGithub /></Link>
-        </li>
+      <li className='hire'>
+  <a href="https://example.com/hire" onClick={() => setMenuOpen(!menuOpen)}>
+    HIRE ME
+  </a>
+</li>
+
+
       </ul>
      
     </nav>

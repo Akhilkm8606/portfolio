@@ -10,7 +10,10 @@ function Contact() {
     <section id='contact'>
  
       <Container className='contact-container' >
-    <h1>contact</h1>
+   <div className='contact-head'>
+    <p>Let's Connect and Chat!____________</p>
+   <h1>CONTACT ME .</h1>
+   </div>
         <Row className='contact-Row' >
         <Col  className='input-col' md={6}>
         <div className='input'>

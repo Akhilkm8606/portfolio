@@ -104,11 +104,17 @@ font-size: 1.2rem;
   margin-right: 10px;
   color: #e28664;}
   
-
+.hire>a{
+  border: 1px solid rgb(102, 101, 99);
+  border-radius: 10px;
+  color: rgb(215, 205, 205);
+  background:linear-gradient(rgb(8, 15, 56),rgb(37, 105, 93)) ;
+  padding: 5px 10px;
+}
   
 
 
-  @media only screen and (max-width:768px) {
+  @media only screen and (max-width:992px) {
     .menu-icon{
         display: flex;
        

@@ -9,6 +9,7 @@ import { Card, CardBody, CardHeader, CardText, Col, Container, Row } from 'react
 
 
 import Service from '../services/Services';
+import Skill from '../Skills/Skill';
 function Works() {
     const [index, setIndex] = useState(0);
     const [showCard, setShowCard] = useState(false);
@@ -87,7 +88,8 @@ function Works() {
   
             <button className='button-right' onClick={nextimg}><CgPlayTrackNextO /></button>
           </Row>
-          <Service/>
+          < Service/>
+          <Skill/>
 
         </Container>
       </section>

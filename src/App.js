@@ -8,7 +8,6 @@ import Home from './componets/home/Home';
 import Navbar from './componets/navbar/Navbar';
   import Footer from './componets/footer/Footer';
 import Works from './componets/work/Works';
-import Services from './componets/services/Services';
 function App() {
   
   return (
@@ -17,7 +16,6 @@ function App() {
     <Routes>
     <Route  path="/" element={<Home/>} />
     <Route  path="/about" element={<About/>} />
-    <Route  path="/services" element={<Services/>} />
     <Route  path="/contact" element={<Contact/>} />
     <Route  path="/work" element={<Works/>} />
            </Routes>

@@ -12,6 +12,7 @@
  
 }
 
+
 .typed-text{
    
     color: rgb(164, 161, 161);
@@ -30,8 +31,14 @@
     
 }
 .typed-subtitle{
-    color: #f03c15;
-    font-size: 25px;
+   
+    font-size: 35px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.hero-subtitle{
+    
+    margin-bottom: 20px;
 }
 
 .hero-row{
@@ -41,9 +48,12 @@
     align-items: center;
 
    column-gap: 20px;
- 
-}
 
+}
+.hero-description{
+    font-size: 20px;
+
+}
 .hero-img {
     position: relative;
     display: flex;
