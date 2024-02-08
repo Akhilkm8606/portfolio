@@ -1,8 +1,8 @@
 #footer {
-    background: #333;
+    background:transparent;
 
-    color: white; 
-      padding: 20px; 
+    color: rgb(118, 114, 114); 
+      padding: 10px; 
       text-align: center; 
 }
 
