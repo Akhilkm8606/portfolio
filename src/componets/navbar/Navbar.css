@@ -41,17 +41,20 @@ body{
 
     background-color: #eee;
     top: 0%;
-    left: 2%;
+    left: 0%;
   }
   .logo-section :nth-child(2){
     background-color: #eee;
     top: 0%;
-    left: 9%;
+    left: 10%;
   }
   .logo-section :nth-child(3){
     background-color: #0e0f0e;
+    width: 30px;
+    height: 30px;
     top: 0%;
     left: 5%;
+    border-radius: 10px;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -66,8 +69,8 @@ nav h1  {
    
   margin-left: 3.5rem;
     font-size: 2rem;
-    font-weight: bold;
-    color: #eee; 
+    font-weight: bolder;
+    color: #000000; 
   
   }
   .menu-icon{

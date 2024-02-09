@@ -10,7 +10,7 @@ function Navbar() {
       <Link to="/" className='logo-section'>
         <span></span>
         <span></span>
-        <span>AK</span>
+        <span></span>
         <h1>Portfolio</h1>
       </Link>
       <div className='menu-icon' onClick={() => setMenuOpen(!menuOpen)}>
