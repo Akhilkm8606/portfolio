@@ -1,7 +1,6 @@
 #about {
     width: 100%;
     height: fit-content;
-   
 }
 
 .about-head{
@@ -561,16 +560,19 @@ color: rgb(177, 181, 181);
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 500px;
-        width: 80%;
+        height: 400px;
+        width: 70%;
         margin: 20px;
     }
-
+    .about-img {
+        width: 300px;
+        height: 300px;
+            }
     .about-img img {
         margin-top: 5rem;
         width: 100%;
         height: 100%;
-        border-radius: 5px;
+        border-radius: 50%;
     }
 
     .about-column {
@@ -579,7 +581,7 @@ color: rgb(177, 181, 181);
 
     .about-img img {
         width: calc(100% + 30px);
-        height: calc(100% + 130px);
+        height: calc(80% + 100px);
         margin: -20px;
         object-fit: cover;
     }
@@ -625,82 +627,90 @@ color: rgb(177, 181, 181);
    
     
 }
-
-@media (max-width: 576px){
-    
-    .experience-row {    
+@media (max-width: 576px) {
+    /* Adjustments for smaller screen sizes */
+    .about{
+        margin: auto;
+    }
+    .about-img {
+        width: 250px;
+        height: 150px;
+            }
+    .experience-row {
         margin-bottom: 100px;
         display: flex;
-     
         flex-direction: column;
         justify-content: center;
-      
         align-items: center;
+    }
+    .connect-col:first-child {
+        font-size: 26px;
+        margin: 0 20px;
+    }
+    
+    .connect-col p,a {
+        font-size: 15px;
+        overflow-y: scroll; 
+        max-height: 100px; 
     }
     
 
     .experience-section>span {
-      
         border: none;
-     
     }
-   
-    .experience-row>h1{
-   
+
+    .experience-row>h1 {
         color: white;
         font-weight: bold;
         font-size: 30px;
-    text-align: center; 
-    transition:color 0.3s   
+        text-align: center;
+        transition: color 0.3s;
     }
-    .experience-row>h1:hover{
+
+    .experience-row>h1:hover {
         width: 100%;
         color: black;
-    }  
+    }
+
     .exp{
-        color: black;
-        font-size: 30px;
-       
-    }  .exp .icon-left {
-        right: 96%;
-        top: 0%;
-       
-       
-    }
-    
-    .exp .icon-right {
-        position: absolute;
-        left: -13.5%;
-        top: 0%;
-        
-    }
-    .exp .icon-left,.exp  .icon-right{
-    display: none;
-    }
-    .experiences .right:last-child {
-        height: 200px;
-        width:300px ;
-      }
-    .experiences .right {
-        margin-top: 30px;
-
-        margin-left: 50px;
-        height: 200px;
-        margin-right: 50px;
-       
-        width:300px ;
-       
-    }
+        margin: auto;
+        color: black !;
    
-    .experiences .left{
+        overflow-y: scroll; 
+        max-height: 100px; 
+    }
+    .exp .icon-left,
+    .exp .icon-right {
+        display: none;
+    }
+
+    .company-dtls{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .company-dtls div {
+        margin: auto;
+        border: 1px solid rgb(99, 99, 97);
+        border-radius: 10px;
+        color: rgb(245, 242, 242);
+    }
+
+    .experiences .right:last-child,
+    .experiences .right {
         height: 200px;
-        width:300px ;
-        margin-left: 50px;
-        margin-right: 50px;
-    
-        
+        width: 300px;
+        margin: 30px auto; 
         }
-        
 
-
-} 
+    .experiences .left {
+        height: 200px;
+        width: 300px;
+        margin: 30px auto;
+    }
+}
