@@ -7,7 +7,6 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { MdCall } from "react-icons/md";
-import { useNavigate } from "react-router-dom"
 
 function Contact() {
   const [fullname, setFullname] = useState("");
