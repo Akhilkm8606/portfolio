@@ -10,7 +10,6 @@ import { MdCall } from "react-icons/md";
 import { useNavigate } from "react-router-dom"
 
 function Contact() {
-  const navigate = useNavigate();
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
