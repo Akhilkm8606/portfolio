@@ -65,7 +65,7 @@ function Works() {
                   <CardHeader>{currentProject.name}</CardHeader>
                   <CardText>Languages :{currentProject.languages.join(', ')}</CardText>
                   <CardBody>{currentProject.description}</CardBody>
-                  <a href="https://github.com/">Live Demo</a>
+                  <a href="https://akhil-portfolio-1.netlify.app/">Live Demo</a>
   
   
                 </Card>
