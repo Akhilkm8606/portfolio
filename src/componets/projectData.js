@@ -18,7 +18,7 @@ const projectData = {
         name: 'Portfolio',
         languages: ['html', 'css', 'bootstrap', 'javascript'],
         description: "A personal portfolio website built using HTML, CSS, Bootstrap, and JavaScript. The portfolio showcases projects, skills, and experiences in a clean, responsive design. Bootstrap ensures the site is fully optimized for different screen sizes, while custom CSS adds unique styling to create a visually appealing layout. JavaScript enhances interactivity, allowing dynamic features such as smooth scrolling, modal pop-ups, and form validation. The website highlights individual achievements and provides an engaging user experience for visitors and potential clients or employers",
-        
+        link :'https://akhil-k-m.netlify.app'
       },
       {
         id: 2,

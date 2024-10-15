@@ -10,6 +10,7 @@ import { Card, CardBody, CardHeader, CardText, Col, Container, Row } from 'react
 
 import Service from '../services/Services';
 import Skill from '../Skills/Skill';
+import { Link } from 'react-router-dom';
 function Works() {
     const [index, setIndex] = useState(0);
     const [showCard, setShowCard] = useState(false);
@@ -65,7 +66,7 @@ function Works() {
                   <CardHeader>{currentProject.name}</CardHeader>
                   <CardText>Languages :{currentProject.languages.join(', ')}</CardText>
                   <CardBody>{currentProject.description}</CardBody>
-                  <a href="https://akhil-portfolio-1.netlify.app/">Live Demo</a>
+                  <Link to={currentProject.link}>Live Demo</Link>
   
   
                 </Card>
@@ -80,7 +81,7 @@ function Works() {
                   <CardHeader>{nextProject.name}</CardHeader>
                   <CardText>Languages : {nextProject.languages.join(', ')}</CardText>
                   <CardBody>{nextProject.description}</CardBody>
-                  <a href="https://github.com/">Live Demo</a>
+                  <Link to={currentProject.link}>Live Demo</Link>
   
                 </Card>
               )}
